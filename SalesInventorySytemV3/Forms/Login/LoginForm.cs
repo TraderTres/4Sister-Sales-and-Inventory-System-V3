@@ -27,6 +27,8 @@ namespace SalesInventorySytemV3.Forms.Login
             _employeeService = employeeService;
 
             InitializeComponent();
+
+            this.AcceptButton = btnSignIn;
         }
 
         private void btnSignIn_Click(object sender, EventArgs e)
@@ -47,6 +49,11 @@ namespace SalesInventorySytemV3.Forms.Login
             {
                 lblError.Text = "Invalid username or password";
             }
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

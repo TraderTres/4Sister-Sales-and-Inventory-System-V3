@@ -17,6 +17,7 @@ namespace SalesInventorySytemV3.Forms.Sales
         private readonly IProductService _productService;
         private readonly ISalesService _salesService;
 
+
         public SalesForm(IProductService productService, ISalesService salesService)
         {
             _productService = productService;

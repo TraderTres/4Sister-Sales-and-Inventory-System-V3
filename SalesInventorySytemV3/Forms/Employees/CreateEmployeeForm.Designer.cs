@@ -23,30 +23,139 @@
 
         private void InitializeComponent()
         {
-            this.lblUsername = new System.Windows.Forms.Label(); this.txtUsername = new System.Windows.Forms.TextBox();
-            this.lblFull = new System.Windows.Forms.Label(); this.txtFullName = new System.Windows.Forms.TextBox();
-            this.lblRole = new System.Windows.Forms.Label(); this.cbRole = new System.Windows.Forms.ComboBox();
-            this.lblPassword = new System.Windows.Forms.Label(); this.txtPassword = new System.Windows.Forms.TextBox();
-            this.lblConfirm = new System.Windows.Forms.Label(); this.txtConfirm = new System.Windows.Forms.TextBox();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.lblFull = new System.Windows.Forms.Label();
+            this.txtFullName = new System.Windows.Forms.TextBox();
+            this.lblRole = new System.Windows.Forms.Label();
+            this.cbRole = new System.Windows.Forms.ComboBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.lblConfirm = new System.Windows.Forms.Label();
+            this.txtConfirm = new System.Windows.Forms.TextBox();
             this.btnCreate = new System.Windows.Forms.Button();
-            // layout compact
-            this.lblUsername.Text = "Username"; this.lblUsername.Location = new System.Drawing.Point(20, 16);
-            this.txtUsername.Location = new System.Drawing.Point(20, 34); this.txtUsername.Width = 360;
-            this.lblFull.Text = "Full Name"; this.lblFull.Location = new System.Drawing.Point(20, 68);
-            this.txtFullName.Location = new System.Drawing.Point(20, 86); this.txtFullName.Width = 360;
-            this.lblRole.Text = "Role"; this.lblRole.Location = new System.Drawing.Point(20, 120);
-            this.cbRole.Location = new System.Drawing.Point(20, 138); this.cbRole.Width = 360;
-            this.lblPassword.Text = "Password"; this.lblPassword.Location = new System.Drawing.Point(20, 172);
-            this.txtPassword.Location = new System.Drawing.Point(20, 190); this.txtPassword.Width = 360; this.txtPassword.UseSystemPasswordChar = true;
-            this.lblConfirm.Text = "Confirm Password"; this.lblConfirm.Location = new System.Drawing.Point(20, 224);
-            this.txtConfirm.Location = new System.Drawing.Point(20, 242); this.txtConfirm.Width = 360; this.txtConfirm.UseSystemPasswordChar = true;
-            this.btnCreate.Text = "Create"; this.btnCreate.Location = new System.Drawing.Point(220, 280); this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
-            //
-            this.ClientSize = new System.Drawing.Size(420, 330);
-            this.Controls.AddRange(new System.Windows.Forms.Control[] { this.lblUsername, this.txtUsername, this.lblFull, this.txtFullName, this.lblRole, this.cbRole, this.lblPassword, this.txtPassword, this.lblConfirm, this.txtConfirm, this.btnCreate });
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.Location = new System.Drawing.Point(12, 57);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(100, 15);
+            this.lblUsername.TabIndex = 0;
+            this.lblUsername.Text = "Username:";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Location = new System.Drawing.Point(12, 75);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(360, 20);
+            this.txtUsername.TabIndex = 1;
+            // 
+            // lblFull
+            // 
+            this.lblFull.Location = new System.Drawing.Point(12, 109);
+            this.lblFull.Name = "lblFull";
+            this.lblFull.Size = new System.Drawing.Size(100, 15);
+            this.lblFull.TabIndex = 2;
+            this.lblFull.Text = "Full Name:";
+            // 
+            // txtFullName
+            // 
+            this.txtFullName.Location = new System.Drawing.Point(12, 127);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(360, 20);
+            this.txtFullName.TabIndex = 3;
+            // 
+            // lblRole
+            // 
+            this.lblRole.Location = new System.Drawing.Point(12, 161);
+            this.lblRole.Name = "lblRole";
+            this.lblRole.Size = new System.Drawing.Size(100, 15);
+            this.lblRole.TabIndex = 4;
+            this.lblRole.Text = "Role:";
+            // 
+            // cbRole
+            // 
+            this.cbRole.Location = new System.Drawing.Point(12, 179);
+            this.cbRole.Name = "cbRole";
+            this.cbRole.Size = new System.Drawing.Size(360, 21);
+            this.cbRole.TabIndex = 5;
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.Location = new System.Drawing.Point(12, 213);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(100, 15);
+            this.lblPassword.TabIndex = 6;
+            this.lblPassword.Text = "Password:";
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(12, 231);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(360, 20);
+            this.txtPassword.TabIndex = 7;
+            this.txtPassword.UseSystemPasswordChar = true;
+            // 
+            // lblConfirm
+            // 
+            this.lblConfirm.Location = new System.Drawing.Point(12, 265);
+            this.lblConfirm.Name = "lblConfirm";
+            this.lblConfirm.Size = new System.Drawing.Size(100, 15);
+            this.lblConfirm.TabIndex = 8;
+            this.lblConfirm.Text = "Confirm Password:";
+            // 
+            // txtConfirm
+            // 
+            this.txtConfirm.Location = new System.Drawing.Point(12, 283);
+            this.txtConfirm.Name = "txtConfirm";
+            this.txtConfirm.Size = new System.Drawing.Size(360, 20);
+            this.txtConfirm.TabIndex = 9;
+            this.txtConfirm.UseSystemPasswordChar = true;
+            // 
+            // btnCreate
+            // 
+            this.btnCreate.Location = new System.Drawing.Point(138, 330);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(101, 23);
+            this.btnCreate.TabIndex = 10;
+            this.btnCreate.Text = "Create";
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(148, 18);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Account Employee";
+            // 
+            // CreateEmployeeForm
+            // 
+            this.ClientSize = new System.Drawing.Size(420, 381);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblUsername);
+            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.lblFull);
+            this.Controls.Add(this.txtFullName);
+            this.Controls.Add(this.lblRole);
+            this.Controls.Add(this.cbRole);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.lblConfirm);
+            this.Controls.Add(this.txtConfirm);
+            this.Controls.Add(this.btnCreate);
             this.Name = "CreateEmployeeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Create Employee";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
+
+        private System.Windows.Forms.Label label1;
     }
 }
