@@ -16,9 +16,11 @@ namespace SalesInventorySytemV3.Forms.Inventory
     public partial class AddProductForm : Form
     {
         private readonly IProductService _productService;
-        public AddProductForm(IProductService productService)
+        private readonly Action _onProductAdded;
+        public AddProductForm(IProductService productService, Action onProductAdded)
         {
             _productService = productService;
+            _onProductAdded = onProductAdded;
             InitializeComponent();
         }
 
@@ -43,6 +45,7 @@ namespace SalesInventorySytemV3.Forms.Inventory
                 Active = true
             };
             _productService.AddProduct(p);
+            _onProductAdded.Invoke();
             this.DialogResult = DialogResult.OK;
             this.Close();
         }

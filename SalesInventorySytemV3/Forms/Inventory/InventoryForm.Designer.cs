@@ -20,22 +20,26 @@
             this.btnAddProduct = new System.Windows.Forms.Button();
             this.btnRestock = new System.Windows.Forms.Button();
             this.dgvProducts = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.Location = new System.Drawing.Point(20, 16);
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(18, 18);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(219, 25);
+            this.lblTitle.Size = new System.Drawing.Size(223, 25);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Inventory Management";
             // 
             // btnAddProduct
             // 
-            this.btnAddProduct.Location = new System.Drawing.Point(20, 60);
+            this.btnAddProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddProduct.Location = new System.Drawing.Point(18, 90);
             this.btnAddProduct.Name = "btnAddProduct";
             this.btnAddProduct.Size = new System.Drawing.Size(120, 28);
             this.btnAddProduct.TabIndex = 1;
@@ -45,7 +49,8 @@
             // 
             // btnRestock
             // 
-            this.btnRestock.Location = new System.Drawing.Point(156, 60);
+            this.btnRestock.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestock.Location = new System.Drawing.Point(154, 90);
             this.btnRestock.Name = "btnRestock";
             this.btnRestock.Size = new System.Drawing.Size(120, 28);
             this.btnRestock.TabIndex = 2;
@@ -55,26 +60,40 @@
             // 
             // dgvProducts
             // 
-            this.dgvProducts.Location = new System.Drawing.Point(20, 100);
-            this.dgvProducts.Name = "dgvProducts";
-            this.dgvProducts.Size = new System.Drawing.Size(820, 420);
-            this.dgvProducts.TabIndex = 3;
-            this.dgvProducts.ReadOnly = true;
             this.dgvProducts.AllowUserToAddRows = false;
-            this.dgvProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvProducts.BackgroundColor = System.Drawing.Color.White;
+            this.dgvProducts.Location = new System.Drawing.Point(20, 124);
+            this.dgvProducts.Name = "dgvProducts";
+            this.dgvProducts.ReadOnly = true;
+            this.dgvProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvProducts.Size = new System.Drawing.Size(1076, 406);
+            this.dgvProducts.TabIndex = 3;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkBlue;
+            this.panel1.Controls.Add(this.lblTitle);
+            this.panel1.Location = new System.Drawing.Point(1, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1126, 61);
+            this.panel1.TabIndex = 4;
             // 
             // InventoryForm
             // 
-            this.ClientSize = new System.Drawing.Size(860, 540);
+            this.ClientSize = new System.Drawing.Size(1118, 641);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvProducts);
             this.Controls.Add(this.btnRestock);
             this.Controls.Add(this.btnAddProduct);
-            this.Controls.Add(this.lblTitle);
             this.Name = "InventoryForm";
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
+
         }
+
+        private System.Windows.Forms.Panel panel1;
     }
 }

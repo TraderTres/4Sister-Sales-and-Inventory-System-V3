@@ -20,23 +20,81 @@
             this.cbReportType = new System.Windows.Forms.ComboBox();
             this.btnGenerate = new System.Windows.Forms.Button();
             this.txtOutput = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.Location = new System.Drawing.Point(20, 16);
-            this.lblTitle.Text = "Reports & Analytics";
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(18, 18);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(205, 25);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Reports and Analytics";
+            // 
             // cbReportType
-            this.cbReportType.Location = new System.Drawing.Point(20, 60); this.cbReportType.Width = 220;
+            // 
+            this.cbReportType.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbReportType.Items.AddRange(new object[] {
+            "Sales (today)",
+            "Inventory Value",
+            "Product Movement"});
+            this.cbReportType.Location = new System.Drawing.Point(24, 92);
+            this.cbReportType.Name = "cbReportType";
+            this.cbReportType.Size = new System.Drawing.Size(220, 26);
+            this.cbReportType.TabIndex = 1;
+            // 
             // btnGenerate
-            this.btnGenerate.Text = "Generate"; this.btnGenerate.Location = new System.Drawing.Point(260, 58); this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
+            // 
+            this.btnGenerate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerate.Location = new System.Drawing.Point(264, 90);
+            this.btnGenerate.Name = "btnGenerate";
+            this.btnGenerate.Size = new System.Drawing.Size(95, 28);
+            this.btnGenerate.TabIndex = 2;
+            this.btnGenerate.Text = "Generate";
+            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
+            // 
             // txtOutput
-            this.txtOutput.Location = new System.Drawing.Point(20, 100); this.txtOutput.Width = 820; this.txtOutput.Height = 420; this.txtOutput.Multiline = true; this.txtOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical; this.txtOutput.ReadOnly = true;
-            //
-            this.ClientSize = new System.Drawing.Size(860, 540);
-            this.Controls.AddRange(new System.Windows.Forms.Control[] { this.lblTitle, this.cbReportType, this.btnGenerate, this.txtOutput });
+            // 
+            this.txtOutput.BackColor = System.Drawing.Color.White;
+            this.txtOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOutput.Location = new System.Drawing.Point(24, 124);
+            this.txtOutput.Multiline = true;
+            this.txtOutput.Name = "txtOutput";
+            this.txtOutput.ReadOnly = true;
+            this.txtOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtOutput.Size = new System.Drawing.Size(1076, 406);
+            this.txtOutput.TabIndex = 3;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkBlue;
+            this.panel1.Controls.Add(this.lblTitle);
+            this.panel1.Location = new System.Drawing.Point(1, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1126, 61);
+            this.panel1.TabIndex = 4;
+            // 
+            // ReportsForm
+            // 
+            this.ClientSize = new System.Drawing.Size(1126, 641);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.cbReportType);
+            this.Controls.Add(this.btnGenerate);
+            this.Controls.Add(this.txtOutput);
             this.Name = "ReportsForm";
-            this.Text = "Reports";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Reports";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
+
+        private System.Windows.Forms.Panel panel1;
     }
 }

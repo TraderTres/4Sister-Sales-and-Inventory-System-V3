@@ -40,8 +40,8 @@ namespace SalesInventorySytemV3.Forms.Inventory
 
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
-            var f = new AddProductForm(_productService);
-            if (f.ShowDialog() == DialogResult.OK) LoadProducts();
+            var f = new AddProductForm(_productService, LoadProducts);
+            f.ShowDialog();
         }
 
         private void btnRestock_Click(object sender, EventArgs e)

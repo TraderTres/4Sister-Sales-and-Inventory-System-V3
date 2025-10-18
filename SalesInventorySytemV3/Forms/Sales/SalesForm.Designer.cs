@@ -34,41 +34,55 @@
             this.chTotal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblTotal = new System.Windows.Forms.Label();
             this.btnComplete = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.nudQty)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.Location = new System.Drawing.Point(20, 16);
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(18, 18);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(59, 25);
+            this.lblTitle.Size = new System.Drawing.Size(56, 25);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Sales";
             // 
             // cbProducts
             // 
+            this.cbProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbProducts.FormattingEnabled = true;
-            this.cbProducts.Location = new System.Drawing.Point(20, 60);
+            this.cbProducts.Location = new System.Drawing.Point(20, 92);
             this.cbProducts.Name = "cbProducts";
-            this.cbProducts.Size = new System.Drawing.Size(420, 21);
+            this.cbProducts.Size = new System.Drawing.Size(420, 26);
             this.cbProducts.TabIndex = 1;
             // 
             // nudQty
             // 
-            this.nudQty.Location = new System.Drawing.Point(460, 60);
-            this.nudQty.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            this.nudQty.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudQty.Location = new System.Drawing.Point(460, 94);
+            this.nudQty.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nudQty.Name = "nudQty";
-            this.nudQty.Size = new System.Drawing.Size(100, 20);
+            this.nudQty.Size = new System.Drawing.Size(100, 24);
             this.nudQty.TabIndex = 2;
-            this.nudQty.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            this.nudQty.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(580, 58);
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(580, 90);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(100, 24);
+            this.btnAdd.Size = new System.Drawing.Size(100, 28);
             this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -81,9 +95,11 @@
             this.chQty,
             this.chPrice,
             this.chTotal});
-            this.lvItems.Location = new System.Drawing.Point(20, 100);
+            this.lvItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvItems.HideSelection = false;
+            this.lvItems.Location = new System.Drawing.Point(20, 133);
             this.lvItems.Name = "lvItems";
-            this.lvItems.Size = new System.Drawing.Size(760, 320);
+            this.lvItems.Size = new System.Drawing.Size(938, 365);
             this.lvItems.TabIndex = 4;
             this.lvItems.UseCompatibleStateImageBehavior = false;
             this.lvItems.View = System.Windows.Forms.View.Details;
@@ -96,51 +112,70 @@
             // chQty
             // 
             this.chQty.Text = "Qty";
-            this.chQty.Width = 80;
+            this.chQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.chQty.Width = 89;
             // 
             // chPrice
             // 
             this.chPrice.Text = "Price";
+            this.chPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.chPrice.Width = 120;
             // 
             // chTotal
             // 
             this.chTotal.Text = "Total";
-            this.chTotal.Width = 120;
+            this.chTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.chTotal.Width = 128;
             // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(20, 430);
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(17, 516);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(83, 13);
+            this.lblTotal.Size = new System.Drawing.Size(87, 18);
             this.lblTotal.TabIndex = 5;
             this.lblTotal.Text = "Total: ₱0.00";
             // 
             // btnComplete
             // 
-            this.btnComplete.Location = new System.Drawing.Point(660, 426);
+            this.btnComplete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnComplete.Location = new System.Drawing.Point(814, 516);
             this.btnComplete.Name = "btnComplete";
-            this.btnComplete.Size = new System.Drawing.Size(120, 24);
+            this.btnComplete.Size = new System.Drawing.Size(136, 28);
             this.btnComplete.TabIndex = 6;
             this.btnComplete.Text = "Complete Sale";
             this.btnComplete.UseVisualStyleBackColor = true;
             this.btnComplete.Click += new System.EventHandler(this.btnComplete_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkBlue;
+            this.panel1.Controls.Add(this.lblTitle);
+            this.panel1.Location = new System.Drawing.Point(1, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1126, 61);
+            this.panel1.TabIndex = 7;
+            // 
             // SalesForm
             // 
-            this.ClientSize = new System.Drawing.Size(820, 470);
+            this.ClientSize = new System.Drawing.Size(1126, 641);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnComplete);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lvItems);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.nudQty);
             this.Controls.Add(this.cbProducts);
-            this.Controls.Add(this.lblTitle);
             this.Name = "SalesForm";
             ((System.ComponentModel.ISupportInitialize)(this.nudQty)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
+
+        private System.Windows.Forms.Panel panel1;
     }
 }
