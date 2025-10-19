@@ -8,7 +8,7 @@ namespace SalesInventorySytemV3.Models
 {
     public enum Role
     {
-        Administrator,
-        Cashier
+        Administrator = 0,
+        Cashier = 1
     }
 }

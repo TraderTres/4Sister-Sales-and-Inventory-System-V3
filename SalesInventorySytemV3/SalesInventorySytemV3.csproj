@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -131,6 +132,9 @@
     <Compile Include="Repositories\Interfaces\IEmployeeRepository.cs" />
     <Compile Include="Repositories\Interfaces\IProductRepository.cs" />
     <Compile Include="Repositories\Interfaces\ISaleRepository.cs" />
+    <Compile Include="Repositories\Sql\EmployeeSqlRepository.cs" />
+    <Compile Include="Repositories\Sql\ProductSqlRepository.cs" />
+    <Compile Include="Repositories\Sql\SaleSqlRepository.cs" />
     <Compile Include="Services\Implementations\AuthService.cs" />
     <Compile Include="Services\Implementations\EmployeeService.cs" />
     <Compile Include="Services\Implementations\ProductService.cs" />

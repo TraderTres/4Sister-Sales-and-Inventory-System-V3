@@ -46,7 +46,7 @@
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(18, 18);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(56, 25);
+            this.lblTitle.Size = new System.Drawing.Size(71, 32);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Sales";
             // 
@@ -56,7 +56,7 @@
             this.cbProducts.FormattingEnabled = true;
             this.cbProducts.Location = new System.Drawing.Point(20, 92);
             this.cbProducts.Name = "cbProducts";
-            this.cbProducts.Size = new System.Drawing.Size(420, 26);
+            this.cbProducts.Size = new System.Drawing.Size(420, 32);
             this.cbProducts.TabIndex = 1;
             // 
             // nudQty
@@ -69,7 +69,7 @@
             0,
             0});
             this.nudQty.Name = "nudQty";
-            this.nudQty.Size = new System.Drawing.Size(100, 24);
+            this.nudQty.Size = new System.Drawing.Size(100, 29);
             this.nudQty.TabIndex = 2;
             this.nudQty.Value = new decimal(new int[] {
             1,
@@ -133,7 +133,7 @@
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.Location = new System.Drawing.Point(17, 516);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(87, 18);
+            this.lblTotal.Size = new System.Drawing.Size(109, 24);
             this.lblTotal.TabIndex = 5;
             this.lblTotal.Text = "Total: ₱0.00";
             // 
@@ -168,6 +168,7 @@
             this.Controls.Add(this.nudQty);
             this.Controls.Add(this.cbProducts);
             this.Name = "SalesForm";
+            this.Load += new System.EventHandler(this.SalesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudQty)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

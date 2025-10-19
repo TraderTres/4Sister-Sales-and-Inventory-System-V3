@@ -32,7 +32,7 @@
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(18, 18);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(223, 25);
+            this.lblTitle.Size = new System.Drawing.Size(284, 32);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Inventory Management";
             // 
@@ -63,9 +63,11 @@
             this.dgvProducts.AllowUserToAddRows = false;
             this.dgvProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProducts.BackgroundColor = System.Drawing.Color.White;
+            this.dgvProducts.ColumnHeadersHeight = 29;
             this.dgvProducts.Location = new System.Drawing.Point(20, 124);
             this.dgvProducts.Name = "dgvProducts";
             this.dgvProducts.ReadOnly = true;
+            this.dgvProducts.RowHeadersWidth = 51;
             this.dgvProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProducts.Size = new System.Drawing.Size(1076, 406);
             this.dgvProducts.TabIndex = 3;
@@ -87,6 +89,7 @@
             this.Controls.Add(this.btnRestock);
             this.Controls.Add(this.btnAddProduct);
             this.Name = "InventoryForm";
+            this.Load += new System.EventHandler(this.InventoryForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

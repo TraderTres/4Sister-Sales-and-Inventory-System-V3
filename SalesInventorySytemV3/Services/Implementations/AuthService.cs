@@ -24,7 +24,7 @@ namespace SalesInventorySytemV3.Services.Implementations
 
             if (emp != null &&
                 emp.Password == password &&
-                emp.Status == "active")
+                emp.Status.Equals("Active", System.StringComparison.OrdinalIgnoreCase))
             {
                 return emp;
             }

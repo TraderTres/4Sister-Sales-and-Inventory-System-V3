@@ -14,42 +14,28 @@ namespace SalesInventorySytemV3.Services.Implementations
         private readonly ISaleRepository _saleRepository;
         private readonly IProductRepository _productRepository;
 
-        public SalesService(ISaleRepository saleRepository,
-                            IProductRepository productRepository)
+        public SalesService(ISaleRepository saleRepository, IProductRepository productRepository)
         {
             _saleRepository = saleRepository;
             _productRepository = productRepository;
         }
 
-        public void CreateSale(Sale sale)
-        {
-            if (sale == null || sale.Items.Count == 0)
-                throw new InvalidOperationException("Sale is empty.");
+        public IEnumerable<Sale> GetAll() => _saleRepository.GetAll();
 
+        public int NextId() => _saleRepository.NextId();
+
+        public void Add(Sale sale)
+        {
             foreach (var item in sale.Items)
             {
                 var product = _productRepository.GetById(item.ProductId);
-
-                if (product == null)
-                    throw new InvalidOperationException("Product not found.");
-
-                if (product.Stock < item.Quantity)
-                    throw new InvalidOperationException($"Not enough stock for {product.Name}.");
-
-                product.Stock -= item.Quantity;
-                _productRepository.Update(product);
+                if (product != null)
+                {
+                    product.Stock -= item.Quantity;
+                    _productRepository.Update(product);
+                }
             }
-
-            sale.Id = _saleRepository.NextId();
-            sale.Date = DateTime.Now;
-
             _saleRepository.Add(sale);
         }
-
-        public IEnumerable<Sale> GetAll() =>
-            _saleRepository.GetAll();
-
-        public int NextId() =>
-            _saleRepository.NextId();
     }
 }

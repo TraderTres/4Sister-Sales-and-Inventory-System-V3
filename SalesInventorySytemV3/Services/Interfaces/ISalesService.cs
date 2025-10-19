@@ -9,8 +9,8 @@ namespace SalesInventorySytemV3.Services.Interfaces
 {
     public interface ISalesService
     {
-        void CreateSale(Sale sale);
         IEnumerable<Sale> GetAll();
-        int NextId();
+        void Add(Sale sale);         
+        int NextId();            
     }
 }

@@ -6,33 +6,31 @@ using System.Windows.Forms;
 using SalesInventorySytemV3.Repositories.InMemory;
 using SalesInventorySytemV3.Services.Interfaces;
 using SalesInventorySytemV3.Services.Implementations;
+using SalesInventorySytemV3.Repositories.Sql;
 
 
 namespace SalesInventorySytemV3
 {
     public static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            // Repositories
-            var productRepo = new InMemoryProductRepository();
-            var employeeRepo = new InMemoryEmployeeRepository();
-            var saleRepo = new InMemorySaleRepository();
+            // ========== 1. Repositories (SQL) ==========
+            var productRepository = new ProductSqlRepository();
+            var employeeRepository = new EmployeeSqlRepository();
+            var saleRepository = new SaleSqlRepository();
 
-            // Services
-            IAuthService authService = new AuthService(employeeRepo);
-            IProductService productService = new ProductService(productRepo);
-            ISalesService salesService = new SalesService(saleRepo, productRepo);
-            IEmployeeService employeeService = new EmployeeService(employeeRepo);
+            // ========== 2. Services ==========
+            IAuthService authService = new AuthService(employeeRepository);
+            IProductService productService = new ProductService(productRepository);
+            ISalesService salesService = new SalesService(saleRepository, productRepository);
+            IEmployeeService employeeService = new EmployeeService(employeeRepository);
 
-            // Start with LoginForm
+            // ========== 3. Start LoginForm ==========
             Application.Run(new Forms.Login.LoginForm(
                 authService,
                 productService,

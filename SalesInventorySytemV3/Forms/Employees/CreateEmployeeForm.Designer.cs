@@ -49,7 +49,7 @@
             // 
             this.txtUsername.Location = new System.Drawing.Point(12, 75);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(360, 20);
+            this.txtUsername.Size = new System.Drawing.Size(360, 22);
             this.txtUsername.TabIndex = 1;
             // 
             // lblFull
@@ -64,7 +64,7 @@
             // 
             this.txtFullName.Location = new System.Drawing.Point(12, 127);
             this.txtFullName.Name = "txtFullName";
-            this.txtFullName.Size = new System.Drawing.Size(360, 20);
+            this.txtFullName.Size = new System.Drawing.Size(360, 22);
             this.txtFullName.TabIndex = 3;
             // 
             // lblRole
@@ -79,7 +79,7 @@
             // 
             this.cbRole.Location = new System.Drawing.Point(12, 179);
             this.cbRole.Name = "cbRole";
-            this.cbRole.Size = new System.Drawing.Size(360, 21);
+            this.cbRole.Size = new System.Drawing.Size(360, 24);
             this.cbRole.TabIndex = 5;
             // 
             // lblPassword
@@ -94,7 +94,7 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(12, 231);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(360, 20);
+            this.txtPassword.Size = new System.Drawing.Size(360, 22);
             this.txtPassword.TabIndex = 7;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
@@ -110,7 +110,7 @@
             // 
             this.txtConfirm.Location = new System.Drawing.Point(12, 283);
             this.txtConfirm.Name = "txtConfirm";
-            this.txtConfirm.Size = new System.Drawing.Size(360, 20);
+            this.txtConfirm.Size = new System.Drawing.Size(360, 22);
             this.txtConfirm.TabIndex = 9;
             this.txtConfirm.UseSystemPasswordChar = true;
             // 
@@ -129,7 +129,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 18);
+            this.label1.Size = new System.Drawing.Size(187, 24);
             this.label1.TabIndex = 11;
             this.label1.Text = "Account Employee";
             // 
@@ -151,6 +151,7 @@
             this.Name = "CreateEmployeeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Create Employee";
+            this.Load += new System.EventHandler(this.CreateEmployeeForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

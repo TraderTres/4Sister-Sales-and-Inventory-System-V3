@@ -55,10 +55,15 @@ namespace SalesInventorySytemV3.Forms.Inventory
             if (f.ShowDialog() == DialogResult.OK)
             {
                 product.Stock += f.Quantity;
-                _productService.UpdateProduct(product);
+                _productService.Update(product);
                 MessageBox.Show("Restocked successfully");
                 LoadProducts();
             }
+        }
+
+        private void InventoryForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
