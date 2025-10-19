@@ -12,5 +12,6 @@ namespace SalesInventorySytemV3.Services.Interfaces
         void CreateSale(Sale sale);
         IEnumerable<Sale> GetAll();
         int NextId();
+        List<Sale> GetSalesForDate(DateTime date);
     }
 }

@@ -48,7 +48,7 @@
             this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSidebar.Location = new System.Drawing.Point(0, 0);
             this.panelSidebar.Name = "panelSidebar";
-            this.panelSidebar.Size = new System.Drawing.Size(248, 680);
+            this.panelSidebar.Size = new System.Drawing.Size(248, 888);
             this.panelSidebar.TabIndex = 0;
             // 
             // btnPrint
@@ -154,16 +154,17 @@
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContent.Location = new System.Drawing.Point(248, 0);
             this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(932, 680);
+            this.panelContent.Size = new System.Drawing.Size(1441, 888);
             this.panelContent.TabIndex = 1;
             // 
             // MainForm
             // 
-            this.ClientSize = new System.Drawing.Size(1180, 680);
+            this.ClientSize = new System.Drawing.Size(1689, 888);
             this.Controls.Add(this.panelContent);
             this.Controls.Add(this.panelSidebar);
             this.IsMdiContainer = true;
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Store Management";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelSidebar.ResumeLayout(false);

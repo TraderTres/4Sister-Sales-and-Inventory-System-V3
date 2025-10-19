@@ -100,8 +100,6 @@
     <Compile Include="Forms\Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Print\Implementations.cs" />
-    <Compile Include="Forms\Print\Interfaces.cs" />
     <Compile Include="Forms\Print\PrintFrom.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -30,7 +30,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(18, 18);
+            this.lblTitle.Location = new System.Drawing.Point(18, 26);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(223, 25);
             this.lblTitle.TabIndex = 0;
@@ -39,7 +39,7 @@
             // btnAddProduct
             // 
             this.btnAddProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddProduct.Location = new System.Drawing.Point(18, 90);
+            this.btnAddProduct.Location = new System.Drawing.Point(22, 124);
             this.btnAddProduct.Name = "btnAddProduct";
             this.btnAddProduct.Size = new System.Drawing.Size(120, 28);
             this.btnAddProduct.TabIndex = 1;
@@ -50,7 +50,7 @@
             // btnRestock
             // 
             this.btnRestock.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRestock.Location = new System.Drawing.Point(154, 90);
+            this.btnRestock.Location = new System.Drawing.Point(158, 124);
             this.btnRestock.Name = "btnRestock";
             this.btnRestock.Size = new System.Drawing.Size(120, 28);
             this.btnRestock.TabIndex = 2;
@@ -63,11 +63,11 @@
             this.dgvProducts.AllowUserToAddRows = false;
             this.dgvProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProducts.BackgroundColor = System.Drawing.Color.White;
-            this.dgvProducts.Location = new System.Drawing.Point(20, 124);
+            this.dgvProducts.Location = new System.Drawing.Point(24, 158);
             this.dgvProducts.Name = "dgvProducts";
             this.dgvProducts.ReadOnly = true;
             this.dgvProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProducts.Size = new System.Drawing.Size(1076, 406);
+            this.dgvProducts.Size = new System.Drawing.Size(1636, 619);
             this.dgvProducts.TabIndex = 3;
             // 
             // panel1
@@ -75,18 +75,22 @@
             this.panel1.BackColor = System.Drawing.Color.DarkBlue;
             this.panel1.Controls.Add(this.lblTitle);
             this.panel1.Location = new System.Drawing.Point(1, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1126, 61);
+            this.panel1.Size = new System.Drawing.Size(1689, 84);
             this.panel1.TabIndex = 4;
             // 
             // InventoryForm
             // 
-            this.ClientSize = new System.Drawing.Size(1118, 641);
+            this.ClientSize = new System.Drawing.Size(1689, 888);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvProducts);
             this.Controls.Add(this.btnRestock);
             this.Controls.Add(this.btnAddProduct);
             this.Name = "InventoryForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.InventoryForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

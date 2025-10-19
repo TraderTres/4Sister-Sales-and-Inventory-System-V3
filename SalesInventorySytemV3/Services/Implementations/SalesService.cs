@@ -14,8 +14,7 @@ namespace SalesInventorySytemV3.Services.Implementations
         private readonly ISaleRepository _saleRepository;
         private readonly IProductRepository _productRepository;
 
-        public SalesService(ISaleRepository saleRepository,
-                            IProductRepository productRepository)
+        public SalesService(ISaleRepository saleRepository, IProductRepository productRepository)
         {
             _saleRepository = saleRepository;
             _productRepository = productRepository;
@@ -51,5 +50,12 @@ namespace SalesInventorySytemV3.Services.Implementations
 
         public int NextId() =>
             _saleRepository.NextId();
+    
+    private List<Sale> _sales = new List<Sale>();
+
+        public List<Sale> GetSalesForDate(DateTime date)
+        {
+            return _sales.Where(s => s.Date.Date == date.Date).ToList();
+        }
     }
 }

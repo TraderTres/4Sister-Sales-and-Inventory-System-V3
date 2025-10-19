@@ -60,5 +60,10 @@ namespace SalesInventorySytemV3.Forms.Inventory
                 LoadProducts();
             }
         }
+
+        private void InventoryForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
