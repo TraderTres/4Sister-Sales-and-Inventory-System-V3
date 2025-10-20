@@ -13,5 +13,6 @@ namespace SalesInventorySytemV3.Services.Interfaces
         void Add(Sale sale);         
         int NextId();
         List<Sale> GetSalesForDate(DateTime date);
+        IEnumerable<Sale> GetSalesBetween(DateTime startDate, DateTime endDate);
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using SalesInventorySytemV3.Models;
@@ -13,7 +14,6 @@ namespace SalesInventorySytemV3.Services.Implementations
     {
         private readonly ISaleRepository _saleRepository;
         private readonly IProductRepository _productRepository;
-        private List<Sale> _sales = new List<Sale>();
 
         public SalesService(ISaleRepository saleRepository, IProductRepository productRepository)
         {
@@ -36,12 +36,26 @@ namespace SalesInventorySytemV3.Services.Implementations
                     _productRepository.Update(product);
                 }
             }
+
             _saleRepository.Add(sale);
         }
 
+        // ✅ Fix 1: Use repository instead of local list
         public List<Sale> GetSalesForDate(DateTime date)
         {
-            return _sales.Where(s => s.CreatedDate.Date == date.Date).ToList();
+            return _saleRepository
+                .GetAll()
+                .Where(s => s.CreatedDate.Date == date.Date)
+                .ToList();
+        }
+
+        // ✅ Fix 2: GetSalesBetween uses repository, not _context
+        public IEnumerable<Sale> GetSalesBetween(DateTime startDate, DateTime endDate)
+        {
+            return _saleRepository
+                .GetAll()
+                .Where(s => s.CreatedDate.Date >= startDate.Date && s.CreatedDate.Date <= endDate.Date)
+                .ToList();
         }
     }
 }
