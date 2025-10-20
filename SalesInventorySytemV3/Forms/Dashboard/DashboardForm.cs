@@ -27,7 +27,7 @@ namespace SalesInventorySytemV3.Forms.Dashboard
         public void LoadDashboard()
         {
             var today = DateTime.Now.Date;
-            var todaySales = _salesService.GetAll().Where(s => s.Date.Date == today).ToList();
+            var todaySales = _salesService.GetAll().Where(s => s.CreatedDate.Date == today).ToList();
             var totalToday = todaySales.Sum(s => s.Total);
             var lowStock = _productService.GetAllActive().Count(p => p.Stock <= 10 && p.Stock > 0);
             var outOfStock = _productService.GetAllActive().Count(p => p.Stock == 0);
@@ -38,14 +38,14 @@ namespace SalesInventorySytemV3.Forms.Dashboard
             lblTodayOrders.Text = todaySales.Count.ToString();
 
             lvRecent.Items.Clear();
-            var recent = _salesService.GetAll().OrderByDescending(s => s.Date).Take(5).ToList();
+            var recent = _salesService.GetAll().OrderByDescending(s => s.CreatedDate).Take(5).ToList();
             if (!recent.Any()) lvRecent.Items.Add(new ListViewItem(new[] { "-", "No transactions yet", "-" }));
             else
             {
                 foreach (var s in recent)
                 {
                     var itemsText = string.Join(", ", s.Items.Select(i => $"{i.Name}({i.Quantity})"));
-                    lvRecent.Items.Add(new ListViewItem(new[] { s.Date.ToString("g"), itemsText, $"₱{s.Total:F2}" }));
+                    lvRecent.Items.Add(new ListViewItem(new[] { s.CreatedDate.ToString("g"), itemsText, $"₱{s.Total:F2}" }));
                 }
             }
         }

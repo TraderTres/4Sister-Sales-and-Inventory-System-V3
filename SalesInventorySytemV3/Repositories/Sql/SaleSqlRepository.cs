@@ -19,14 +19,13 @@ namespace SalesInventorySytemV3.Repositories.Sql
             var settings = ConfigurationManager.ConnectionStrings["MyDb"];
             if (settings == null || string.IsNullOrWhiteSpace(settings.ConnectionString))
                 throw new Exception("Connection string 'MyDb' not found in App.config!");
-
             _connectionString = settings.ConnectionString;
         }
 
         public IEnumerable<Sale> GetAll()
         {
             var sales = new List<Sale>();
-            string saleQuery = "SELECT * FROM Sales ORDER BY Date DESC";
+            string saleQuery = "SELECT * FROM Sales ORDER BY CreatedDate DESC"; // ✅ use CreatedDate
 
             using (var conn = new SqlConnection(_connectionString))
             using (var cmd = new SqlCommand(saleQuery, conn))
@@ -39,10 +38,15 @@ namespace SalesInventorySytemV3.Repositories.Sql
                         sales.Add(new Sale
                         {
                             Id = reader.GetInt32(reader.GetOrdinal("Id")),
-                            Date = reader.GetDateTime(reader.GetOrdinal("Date")),
+                            // ✅ SAFE READ
+                            CreatedDate = reader.IsDBNull(reader.GetOrdinal("CreatedDate"))
+                                ? DateTime.Now
+                                : reader.GetDateTime(reader.GetOrdinal("CreatedDate")),
                             Total = reader.GetDecimal(reader.GetOrdinal("Total")),
                             PaymentMethod = reader.GetString(reader.GetOrdinal("PaymentMethod")),
-                            Reference = reader.GetString(reader.GetOrdinal("Reference")),
+                            Reference = reader.IsDBNull(reader.GetOrdinal("Reference"))
+                                ? ""
+                                : reader.GetString(reader.GetOrdinal("Reference")),
                             Items = new List<SaleItem>()
                         });
                     }
@@ -82,55 +86,50 @@ namespace SalesInventorySytemV3.Repositories.Sql
             using (var conn = new SqlConnection(_connectionString))
             {
                 conn.Open();
-                using (var tran = conn.BeginTransaction())
+                using (var transaction = conn.BeginTransaction())
                 {
                     try
                     {
-                        string insertSaleQuery = @"
-                            INSERT INTO Sales (Date, Total, PaymentMethod, Reference)
-                            VALUES (@Date, @Total, @PaymentMethod, @Reference);
-                            SELECT CAST(SCOPE_IDENTITY() AS INT);
-                        ";
+                        if (sale.CreatedDate == default) // ✅ safeguard
+                            sale.CreatedDate = DateTime.Now;
 
-                        int saleId;
-                        using (var cmd = new SqlCommand(insertSaleQuery, conn, tran))
+                        string saleQuery = @"
+                            INSERT INTO Sales (CreatedDate, Total, PaymentMethod, Reference)
+                            VALUES (@CreatedDate, @Total, @PaymentMethod, @Reference);
+                            SELECT CAST(SCOPE_IDENTITY() AS INT);";
+
+                        using (var saleCmd = new SqlCommand(saleQuery, conn, transaction))
                         {
-                            cmd.Parameters.AddWithValue("@Date", sale.Date);
-                            cmd.Parameters.AddWithValue("@Total", sale.Total);
-                            cmd.Parameters.AddWithValue("@PaymentMethod", sale.PaymentMethod);
-                            cmd.Parameters.AddWithValue("@Reference", sale.Reference);
+                            saleCmd.Parameters.AddWithValue("@CreatedDate", sale.CreatedDate);
+                            saleCmd.Parameters.AddWithValue("@Total", sale.Total);
+                            saleCmd.Parameters.AddWithValue("@PaymentMethod", sale.PaymentMethod);
+                            saleCmd.Parameters.AddWithValue("@Reference", sale.Reference ?? (object)DBNull.Value);
 
-                            saleId = (int)cmd.ExecuteScalar();
+                            sale.Id = (int)saleCmd.ExecuteScalar();
                         }
-
-                        string insertItemQuery = @"
-                            INSERT INTO SaleItems (SaleId, ProductId, Name, Quantity, Price)
-                            VALUES (@SaleId, @ProductId, @Name, @Quantity, @Price);
-                            SELECT CAST(SCOPE_IDENTITY() AS INT);
-                        ";
 
                         foreach (var item in sale.Items)
                         {
-                            using (var cmd = new SqlCommand(insertItemQuery, conn, tran))
-                            {
-                                cmd.Parameters.AddWithValue("@SaleId", saleId);
-                                cmd.Parameters.AddWithValue("@ProductId", item.ProductId);
-                                cmd.Parameters.AddWithValue("@Name", item.Name);
-                                cmd.Parameters.AddWithValue("@Quantity", item.Quantity);
-                                cmd.Parameters.AddWithValue("@Price", item.Price);
+                            string itemQuery = @"
+                                INSERT INTO SaleItems (SaleId, ProductId, Name, Quantity, Price)
+                                VALUES (@SaleId, @ProductId, @Name, @Quantity, @Price);";
 
-                                int newItemId = (int)cmd.ExecuteScalar();
-                                item.Id = newItemId;
-                                item.SaleId = saleId;
+                            using (var itemCmd = new SqlCommand(itemQuery, conn, transaction))
+                            {
+                                itemCmd.Parameters.AddWithValue("@SaleId", sale.Id);
+                                itemCmd.Parameters.AddWithValue("@ProductId", item.ProductId);
+                                itemCmd.Parameters.AddWithValue("@Name", item.Name);
+                                itemCmd.Parameters.AddWithValue("@Quantity", item.Quantity);
+                                itemCmd.Parameters.AddWithValue("@Price", item.Price);
+                                itemCmd.ExecuteNonQuery();
                             }
                         }
 
-                        sale.Id = saleId;
-                        tran.Commit();
+                        transaction.Commit();
                     }
                     catch
                     {
-                        tran.Rollback();
+                        transaction.Rollback();
                         throw;
                     }
                 }
@@ -146,10 +145,11 @@ namespace SalesInventorySytemV3.Repositories.Sql
             using (var cmd = new SqlCommand(query, conn))
             {
                 conn.Open();
-                object result = cmd.ExecuteScalar();
+                var result = cmd.ExecuteScalar();
                 if (result != null && result != DBNull.Value)
                     nextId = Convert.ToInt32(result);
             }
+
             return nextId;
         }
     }

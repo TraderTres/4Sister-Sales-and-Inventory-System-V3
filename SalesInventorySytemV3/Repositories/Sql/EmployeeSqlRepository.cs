@@ -41,10 +41,22 @@ namespace SalesInventorySytemV3.Repositories.Sql
                             Id = reader.GetInt32(reader.GetOrdinal("Id")),
                             Username = reader.GetString(reader.GetOrdinal("Username")),
                             Password = reader.GetString(reader.GetOrdinal("Password")),
-                            FullName = reader.GetString(reader.GetOrdinal("FullName")),
-                            Role = (Role)reader.GetInt32(reader.GetOrdinal("Role")),
-                            Status = reader.GetString(reader.GetOrdinal("Status")),
-                            CreatedDate = reader.GetDateTime(reader.GetOrdinal("CreatedDate"))
+
+                            FullName = reader.IsDBNull(reader.GetOrdinal("FullName"))
+                                ? ""
+                                : reader.GetString(reader.GetOrdinal("FullName")),
+
+                            Role = reader.IsDBNull(reader.GetOrdinal("Role"))
+                                ? Role.Administrator
+                                : (Role)reader.GetInt32(reader.GetOrdinal("Role")),
+
+                            Status = reader.IsDBNull(reader.GetOrdinal("Status"))
+                                ? "Active"
+                                : reader.GetString(reader.GetOrdinal("Status")),
+
+                            CreatedDate = reader.IsDBNull(reader.GetOrdinal("CreatedDate"))
+                                ? DateTime.Now
+                                : reader.GetDateTime(reader.GetOrdinal("CreatedDate"))
                         });
                     }
                 }
@@ -60,7 +72,7 @@ namespace SalesInventorySytemV3.Repositories.Sql
             using (var conn = new SqlConnection(_connectionString))
             using (var cmd = new SqlCommand(query, conn))
             {
-                cmd.Parameters.AddWithValue("@Username", username);
+                cmd.Parameters.AddWithValue("@Username", username.Trim());
                 conn.Open();
 
                 using (var reader = cmd.ExecuteReader())
@@ -72,10 +84,22 @@ namespace SalesInventorySytemV3.Repositories.Sql
                             Id = reader.GetInt32(reader.GetOrdinal("Id")),
                             Username = reader.GetString(reader.GetOrdinal("Username")),
                             Password = reader.GetString(reader.GetOrdinal("Password")),
-                            FullName = reader.GetString(reader.GetOrdinal("FullName")),
-                            Role = (Role)reader.GetInt32(reader.GetOrdinal("Role")),
-                            Status = reader.GetString(reader.GetOrdinal("Status")),
-                            CreatedDate = reader.GetDateTime(reader.GetOrdinal("CreatedDate"))
+
+                            FullName = reader.IsDBNull(reader.GetOrdinal("FullName"))
+                                ? ""
+                                : reader.GetString(reader.GetOrdinal("FullName")),
+
+                            Role = reader.IsDBNull(reader.GetOrdinal("Role"))
+                                ? Role.Administrator
+                                : (Role)reader.GetInt32(reader.GetOrdinal("Role")),
+
+                            Status = reader.IsDBNull(reader.GetOrdinal("Status"))
+                                ? "Active"
+                                : reader.GetString(reader.GetOrdinal("Status")),
+
+                            CreatedDate = reader.IsDBNull(reader.GetOrdinal("CreatedDate"))
+                                ? DateTime.Now
+                                : reader.GetDateTime(reader.GetOrdinal("CreatedDate"))
                         };
                     }
                 }
@@ -103,10 +127,22 @@ namespace SalesInventorySytemV3.Repositories.Sql
                             Id = reader.GetInt32(reader.GetOrdinal("Id")),
                             Username = reader.GetString(reader.GetOrdinal("Username")),
                             Password = reader.GetString(reader.GetOrdinal("Password")),
-                            FullName = reader.GetString(reader.GetOrdinal("FullName")),
-                            Role = (Role)reader.GetInt32(reader.GetOrdinal("Role")),
-                            Status = reader.GetString(reader.GetOrdinal("Status")),
-                            CreatedDate = reader.GetDateTime(reader.GetOrdinal("CreatedDate"))
+
+                            FullName = reader.IsDBNull(reader.GetOrdinal("FullName"))
+                                ? ""
+                                : reader.GetString(reader.GetOrdinal("FullName")),
+
+                            Role = reader.IsDBNull(reader.GetOrdinal("Role"))
+                                ? Role.Administrator
+                                : (Role)reader.GetInt32(reader.GetOrdinal("Role")),
+
+                            Status = reader.IsDBNull(reader.GetOrdinal("Status"))
+                                ? "Active"
+                                : reader.GetString(reader.GetOrdinal("Status")),
+
+                            CreatedDate = reader.IsDBNull(reader.GetOrdinal("CreatedDate"))
+                                ? DateTime.Now
+                                : reader.GetDateTime(reader.GetOrdinal("CreatedDate"))
                         };
                     }
                 }
@@ -127,10 +163,10 @@ namespace SalesInventorySytemV3.Repositories.Sql
             {
                 cmd.Parameters.AddWithValue("@Username", employee.Username);
                 cmd.Parameters.AddWithValue("@Password", employee.Password);
-                cmd.Parameters.AddWithValue("@FullName", employee.FullName);
+                cmd.Parameters.AddWithValue("@FullName", employee.FullName ?? "");
                 cmd.Parameters.AddWithValue("@Role", (int)employee.Role);
-                cmd.Parameters.AddWithValue("@Status", employee.Status);
-                cmd.Parameters.AddWithValue("@CreatedDate", employee.CreatedDate);
+                cmd.Parameters.AddWithValue("@Status", employee.Status ?? "Active");
+                cmd.Parameters.AddWithValue("@CreatedDate", employee.CreatedDate == default ? DateTime.Now : employee.CreatedDate);
 
                 conn.Open();
                 int newId = (int)cmd.ExecuteScalar();

@@ -63,5 +63,10 @@ namespace SalesInventorySytemV3.Forms.Main
         private void btnReports_Click(object sender, EventArgs e) => OpenChildForm(new Reports.ReportsForm(_productService, _salesService));
         private void btnEmployees_Click(object sender, EventArgs e) => OpenChildForm(new Employees.EmployeesForm(_employeeService));
         private void btnLogout_Click(object sender, EventArgs e) { Application.Restart(); }
+        private void btnPrint_Click(object sender, EventArgs e) => OpenChildForm(new Print.PrintForm(_productService, _salesService));
+
+
     }
 }
+        
+        

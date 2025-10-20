@@ -33,7 +33,7 @@ namespace SalesInventorySytemV3.Forms.Reports
                 case "Sales (today)":
                     var today = DateTime.Now.Date;
                     var sales = _salesService.GetAll()
-                        .Where(s => s.Date.Date == today)
+                        .Where(s => s.CreatedDate.Date == today)
                         .ToList();
 
                     txtOutput.AppendText($"Today's sales: {sales.Count}\r\n");
@@ -41,7 +41,7 @@ namespace SalesInventorySytemV3.Forms.Reports
 
                     foreach (var s in sales)
                     {
-                        txtOutput.AppendText($"{s.Date:g} - ₱{s.Total:F2}\r\n");
+                        txtOutput.AppendText($"{s.CreatedDate:g} - ₱{s.Total:F2}\r\n");
                     }
                     break;
 

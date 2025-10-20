@@ -22,6 +22,7 @@
         private void InitializeComponent()
         {
             this.panelSidebar = new System.Windows.Forms.Panel();
+            this.btnPrint = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnEmployees = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
@@ -30,7 +31,6 @@
             this.btnDashboard = new System.Windows.Forms.Button();
             this.lblUserInfo = new System.Windows.Forms.Label();
             this.panelContent = new System.Windows.Forms.Panel();
-            this.btnPrint = new System.Windows.Forms.Button();
             this.panelSidebar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,8 +48,20 @@
             this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSidebar.Location = new System.Drawing.Point(0, 0);
             this.panelSidebar.Name = "panelSidebar";
-            this.panelSidebar.Size = new System.Drawing.Size(248, 680);
+            this.panelSidebar.Size = new System.Drawing.Size(248, 888);
             this.panelSidebar.TabIndex = 0;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrint.Location = new System.Drawing.Point(20, 270);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(210, 36);
+            this.btnPrint.TabIndex = 7;
+            this.btnPrint.Text = "Print System";
+            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // btnLogout
             // 
@@ -142,27 +154,17 @@
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContent.Location = new System.Drawing.Point(248, 0);
             this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(932, 680);
+            this.panelContent.Size = new System.Drawing.Size(1441, 888);
             this.panelContent.TabIndex = 1;
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrint.Location = new System.Drawing.Point(20, 270);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(210, 36);
-            this.btnPrint.TabIndex = 7;
-            this.btnPrint.Text = "Print preview and Receipt";
-            this.btnPrint.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
-            this.ClientSize = new System.Drawing.Size(1180, 680);
+            this.ClientSize = new System.Drawing.Size(1689, 888);
             this.Controls.Add(this.panelContent);
             this.Controls.Add(this.panelSidebar);
             this.IsMdiContainer = true;
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Store Management";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelSidebar.ResumeLayout(false);

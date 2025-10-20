@@ -13,6 +13,7 @@ namespace SalesInventorySytemV3.Services.Implementations
     {
         private readonly ISaleRepository _saleRepository;
         private readonly IProductRepository _productRepository;
+        private List<Sale> _sales = new List<Sale>();
 
         public SalesService(ISaleRepository saleRepository, IProductRepository productRepository)
         {
@@ -36,6 +37,11 @@ namespace SalesInventorySytemV3.Services.Implementations
                 }
             }
             _saleRepository.Add(sale);
+        }
+
+        public List<Sale> GetSalesForDate(DateTime date)
+        {
+            return _sales.Where(s => s.CreatedDate.Date == date.Date).ToList();
         }
     }
 }

@@ -34,6 +34,9 @@
             this.chItems = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chTotal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +47,7 @@
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(18, 18);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(109, 25);
+            this.lblTitle.Size = new System.Drawing.Size(138, 32);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Dashboard";
             // 
@@ -55,7 +58,7 @@
             this.lblTodaySalesLabel.ForeColor = System.Drawing.Color.Black;
             this.lblTodaySalesLabel.Location = new System.Drawing.Point(21, 74);
             this.lblTodaySalesLabel.Name = "lblTodaySalesLabel";
-            this.lblTodaySalesLabel.Size = new System.Drawing.Size(119, 18);
+            this.lblTodaySalesLabel.Size = new System.Drawing.Size(146, 24);
             this.lblTodaySalesLabel.TabIndex = 1;
             this.lblTodaySalesLabel.Text = "Today\'s Sales:";
             // 
@@ -66,7 +69,7 @@
             this.lblTodaySales.ForeColor = System.Drawing.Color.Black;
             this.lblTodaySales.Location = new System.Drawing.Point(21, 100);
             this.lblTodaySales.Name = "lblTodaySales";
-            this.lblTodaySales.Size = new System.Drawing.Size(38, 19);
+            this.lblTodaySales.Size = new System.Drawing.Size(46, 23);
             this.lblTodaySales.TabIndex = 2;
             this.lblTodaySales.Text = "₱0.0";
             // 
@@ -77,7 +80,7 @@
             this.lblTotalProducts.ForeColor = System.Drawing.Color.Black;
             this.lblTotalProducts.Location = new System.Drawing.Point(221, 100);
             this.lblTotalProducts.Name = "lblTotalProducts";
-            this.lblTotalProducts.Size = new System.Drawing.Size(16, 18);
+            this.lblTotalProducts.Size = new System.Drawing.Size(20, 24);
             this.lblTotalProducts.TabIndex = 3;
             this.lblTotalProducts.Text = "0";
             // 
@@ -88,7 +91,7 @@
             this.lblLowStock.ForeColor = System.Drawing.Color.Black;
             this.lblLowStock.Location = new System.Drawing.Point(421, 100);
             this.lblLowStock.Name = "lblLowStock";
-            this.lblLowStock.Size = new System.Drawing.Size(16, 18);
+            this.lblLowStock.Size = new System.Drawing.Size(20, 24);
             this.lblLowStock.TabIndex = 4;
             this.lblLowStock.Text = "0";
             // 
@@ -99,7 +102,7 @@
             this.lblTodayOrders.ForeColor = System.Drawing.Color.Black;
             this.lblTodayOrders.Location = new System.Drawing.Point(621, 100);
             this.lblTodayOrders.Name = "lblTodayOrders";
-            this.lblTodayOrders.Size = new System.Drawing.Size(16, 18);
+            this.lblTodayOrders.Size = new System.Drawing.Size(20, 24);
             this.lblTodayOrders.TabIndex = 5;
             this.lblTodayOrders.Text = "0";
             // 
@@ -148,10 +151,46 @@
             this.panel1.Size = new System.Drawing.Size(1126, 61);
             this.panel1.TabIndex = 7;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(221, 74);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(144, 24);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Total Products";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(421, 76);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(105, 24);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Low Stock";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(621, 74);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(153, 24);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Today\'s Orders";
+            // 
             // DashboardForm
             // 
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1126, 641);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lvRecent);
             this.Controls.Add(this.lblTodayOrders);
@@ -169,5 +208,8 @@
         }
 
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

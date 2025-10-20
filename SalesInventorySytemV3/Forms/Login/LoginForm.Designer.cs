@@ -10,7 +10,6 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnSignIn;
         private System.Windows.Forms.Label lblError;
-        private System.Windows.Forms.Label lblDemo;
 
         protected override void Dispose(bool disposing)
         {
@@ -27,19 +26,18 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnSignIn = new System.Windows.Forms.Button();
             this.lblError = new System.Windows.Forms.Label();
-            this.lblDemo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(80, 34);
+            this.lblTitle.Location = new System.Drawing.Point(120, 23);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(318, 32);
+            this.lblTitle.Size = new System.Drawing.Size(222, 46);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Store Management System";
+            this.lblTitle.Text = "4Sister Store";
             // 
             // lblUsername
             // 
@@ -89,7 +87,7 @@
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(201, 36);
             this.btnSignIn.TabIndex = 5;
-            this.btnSignIn.Text = "Sign in";
+            this.btnSignIn.Text = "Log-in";
             this.btnSignIn.UseVisualStyleBackColor = false;
             this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
@@ -103,22 +101,10 @@
             this.lblError.Size = new System.Drawing.Size(0, 18);
             this.lblError.TabIndex = 6;
             // 
-            // lblDemo
-            // 
-            this.lblDemo.AutoSize = true;
-            this.lblDemo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDemo.ForeColor = System.Drawing.Color.White;
-            this.lblDemo.Location = new System.Drawing.Point(25, 256);
-            this.lblDemo.Name = "lblDemo";
-            this.lblDemo.Size = new System.Drawing.Size(425, 17);
-            this.lblDemo.TabIndex = 7;
-            this.lblDemo.Text = "Demo credentials: admin/admin123 or cashier/cashier123";
-            // 
             // LoginForm
             // 
             this.BackColor = System.Drawing.Color.DarkBlue;
             this.ClientSize = new System.Drawing.Size(415, 294);
-            this.Controls.Add(this.lblDemo);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.btnSignIn);
             this.Controls.Add(this.txtPassword);
