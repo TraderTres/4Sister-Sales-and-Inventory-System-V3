@@ -16,5 +16,7 @@ namespace SalesInventorySytemV3.Services.Interfaces
         void Add(Product product);
         void Update(Product product);
         int NextId();                          // ✅ NEW
+        IEnumerable<(string ProductName, int Stock)> GetInventoryLevels();
+
     }
 }

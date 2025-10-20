@@ -32,5 +32,12 @@ namespace SalesInventorySytemV3.Services.Implementations
         public void Update(Product product) => _productRepository.Update(product);
 
         public int NextId() => _productRepository.NextId();
+        public IEnumerable<(string ProductName, int Stock)> GetInventoryLevels()
+        {
+            return _productRepository.GetAll()
+                .Select(p => (p.Name, p.Stock))
+                .ToList();
+        }
+
     }
 }

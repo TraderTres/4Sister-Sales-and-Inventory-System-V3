@@ -57,5 +57,28 @@ namespace SalesInventorySytemV3.Services.Implementations
                 .Where(s => s.CreatedDate.Date >= startDate.Date && s.CreatedDate.Date <= endDate.Date)
                 .ToList();
         }
+        public IEnumerable<(DateTime Date, decimal Total)> GetSalesSummaryByDate(DateTime startDate, DateTime endDate)
+        {
+            return _saleRepository.GetAll()
+                .Where(s => s.CreatedDate >= startDate && s.CreatedDate <= endDate)
+                .SelectMany(s => s.Items.Select(i => new { s.CreatedDate, Total = i.Price * i.Quantity }))
+                .GroupBy(x => x.CreatedDate.Date)
+                .Select(g => (g.Key, g.Sum(x => x.Total)))
+                .OrderBy(x => x.Key)
+                .ToList();
+        }
+
+        public IEnumerable<(int ProductId, string ProductName, decimal TotalSold)> GetTopProducts(DateTime startDate, DateTime endDate, int topN = 10)
+        {
+            return _saleRepository.GetAll()
+                .Where(s => s.CreatedDate >= startDate && s.CreatedDate <= endDate)
+                .SelectMany(s => s.Items)
+                .GroupBy(i => new { i.ProductId, i.Name })
+                .Select(g => (g.Key.ProductId, g.Key.Name, g.Sum(i => i.Price * i.Quantity)))
+                .OrderByDescending(x => x.Item3)
+                .Take(topN)
+                .ToList();
+        }
+
     }
 }
