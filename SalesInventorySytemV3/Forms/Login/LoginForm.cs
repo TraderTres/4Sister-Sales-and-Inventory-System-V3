@@ -55,6 +55,7 @@ namespace SalesInventorySytemV3.Forms.Login
         {
 
         }
+<<<<<<< HEAD
 
         public void ResetFields()
         {
@@ -62,5 +63,7 @@ namespace SalesInventorySytemV3.Forms.Login
             txtPassword.Text = string.Empty;
             lblError.Text = string.Empty;
         }
+=======
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
     }
 }

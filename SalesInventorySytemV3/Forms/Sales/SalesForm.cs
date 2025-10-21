@@ -71,8 +71,18 @@ namespace SalesInventorySytemV3.Forms.Sales
 
         private void btnComplete_Click(object sender, EventArgs e)
         {
-            if (lvItems.Items.Count == 0) { MessageBox.Show("Add items first"); return; }
-            var sale = new Sale { Items = new System.Collections.Generic.List<SaleItem>(), PaymentMethod = "cash" };
+            if (lvItems.Items.Count == 0)
+            {
+                MessageBox.Show("Add items first");
+                return;
+            }
+
+            var sale = new Sale
+            {
+                Items = new List<SaleItem>(),
+                PaymentMethod = "cash",
+                CreatedDate = DateTime.Now  // ✅ CRITICAL LINE
+            };
 
             try
             {
@@ -82,10 +92,19 @@ namespace SalesInventorySytemV3.Forms.Sales
                     var qty = int.Parse(li.SubItems[1].Text);
                     var p = _productService.GetByName(name);
                     if (p == null) throw new InvalidOperationException("Product not found.");
-                    sale.Items.Add(new SaleItem { ProductId = p.Id, Name = p.Name, Quantity = qty, Price = p.Price });
+
+                    sale.Items.Add(new SaleItem
+                    {
+                        ProductId = p.Id,
+                        Name = p.Name,
+                        Quantity = qty,
+                        Price = p.Price
+                    });
                 }
+
                 sale.Total = sale.Items.Sum(i => i.Price * i.Quantity);
-                _salesService.CreateSale(sale);
+
+                _salesService.Add(sale);
 
                 MessageBox.Show("Sale completed");
                 lvItems.Items.Clear();
@@ -100,5 +119,10 @@ namespace SalesInventorySytemV3.Forms.Sales
 
         // helper
         private class ComboBoxItem { public string Text { get; set; } public object Value { get; set; } public override string ToString() => Text; }
+
+        private void SalesForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

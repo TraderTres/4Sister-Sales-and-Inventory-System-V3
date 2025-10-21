@@ -29,7 +29,11 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.lblTitle.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.lblTitle.Location = new System.Drawing.Point(18, 26);
+=======
+            this.lblTitle.Location = new System.Drawing.Point(18, 18);
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(205, 25);
             this.lblTitle.TabIndex = 0;
@@ -42,7 +46,11 @@
             "Sales (today)",
             "Inventory Value",
             "Product Movement"});
+<<<<<<< HEAD
             this.cbReportType.Location = new System.Drawing.Point(24, 152);
+=======
+            this.cbReportType.Location = new System.Drawing.Point(24, 92);
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.cbReportType.Name = "cbReportType";
             this.cbReportType.Size = new System.Drawing.Size(220, 26);
             this.cbReportType.TabIndex = 1;
@@ -50,7 +58,11 @@
             // btnGenerate
             // 
             this.btnGenerate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.btnGenerate.Location = new System.Drawing.Point(264, 150);
+=======
+            this.btnGenerate.Location = new System.Drawing.Point(264, 90);
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(95, 28);
             this.btnGenerate.TabIndex = 2;
@@ -61,12 +73,20 @@
             // 
             this.txtOutput.BackColor = System.Drawing.Color.White;
             this.txtOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.txtOutput.Location = new System.Drawing.Point(24, 184);
+=======
+            this.txtOutput.Location = new System.Drawing.Point(24, 124);
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.txtOutput.Multiline = true;
             this.txtOutput.Name = "txtOutput";
             this.txtOutput.ReadOnly = true;
             this.txtOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+<<<<<<< HEAD
             this.txtOutput.Size = new System.Drawing.Size(1625, 535);
+=======
+            this.txtOutput.Size = new System.Drawing.Size(1076, 406);
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.txtOutput.TabIndex = 3;
             // 
             // panel1
@@ -74,24 +94,37 @@
             this.panel1.BackColor = System.Drawing.Color.DarkBlue;
             this.panel1.Controls.Add(this.lblTitle);
             this.panel1.Location = new System.Drawing.Point(1, 1);
+<<<<<<< HEAD
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1689, 84);
+=======
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1126, 61);
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.panel1.TabIndex = 4;
             // 
             // ReportsForm
             // 
+<<<<<<< HEAD
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1689, 888);
+=======
+            this.ClientSize = new System.Drawing.Size(1126, 641);
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.cbReportType);
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.txtOutput);
             this.Name = "ReportsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+<<<<<<< HEAD
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+=======
+            this.Text = "Reports";
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

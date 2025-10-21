@@ -10,7 +10,10 @@ namespace SalesInventorySytemV3.Services.Interfaces
     public interface IEmployeeService
     {
         IEnumerable<Employee> GetAll();
-        void CreateEmployee(Employee employee);
+        IEnumerable<Employee> GetAllActive();
+        Employee GetByUsername(string username);
+        Employee GetById(int id);
+        void Add(Employee employee);
         int NextId();
     }
 }

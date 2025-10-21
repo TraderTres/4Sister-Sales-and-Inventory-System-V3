@@ -43,8 +43,13 @@ namespace SalesInventorySytemV3.Forms.Employees
                 Status = "active",
                 CreatedDate = DateTime.Now
             };
-            _employeeService.CreateEmployee(emp);
+            _employeeService.Add(emp);
             this.DialogResult = DialogResult.OK;
+        }
+
+        private void CreateEmployeeForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -26,15 +26,21 @@ namespace SalesInventorySytemV3.Forms.Inventory
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtName.Text) || !decimal.TryParse(txtPrice.Text, out decimal price) || !int.TryParse(txtStock.Text, out int stock))
+            if (string.IsNullOrWhiteSpace(txtName.Text) ||
+                !decimal.TryParse(txtPrice.Text, out decimal price) ||
+                !int.TryParse(txtStock.Text, out int stock))
             {
                 MessageBox.Show("Enter valid name, price and stock.");
                 return;
             }
 
-            var p = new Product
+            // ✅ Create Product object
+            var product = new Product
             {
-                Id = _productService.NextId(),
+                // ✅ NextId() is no longer needed if IDENTITY is used in SQL.
+                // Remove this line if using IDENTITY in database.
+                // Id = _productService.NextId(),
+
                 Name = txtName.Text.Trim(),
                 Category = txtCategory.Text.Trim(),
                 Brand = txtBrand.Text.Trim(),
@@ -44,10 +50,21 @@ namespace SalesInventorySytemV3.Forms.Inventory
                 Expiry = chkExpiry.Checked ? (DateTime?)dtExpiry.Value.Date : null,
                 Active = true
             };
+<<<<<<< HEAD
             _productService.AddProduct(p);
             _onProductAdded.Invoke();
+=======
+
+            // ✅ Correct method call
+            _productService.Add(product);
+
+            // Refresh UI
+            _onProductAdded?.Invoke();
+
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
+
     }
 }

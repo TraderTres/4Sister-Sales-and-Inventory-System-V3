@@ -12,16 +12,23 @@
         private System.Windows.Forms.Button btnEmployees;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Label lblUserInfo;
+        private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.Button btnAnalytics; // ✅ added
 
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null)) components.Dispose();
+            if (disposing && (components != null))
+                components.Dispose();
             base.Dispose(disposing);
         }
 
         private void InitializeComponent()
         {
             this.panelSidebar = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
+=======
+            this.btnAnalytics = new System.Windows.Forms.Button();
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.btnPrint = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnEmployees = new System.Windows.Forms.Button();
@@ -37,6 +44,10 @@
             // panelSidebar
             // 
             this.panelSidebar.BackColor = System.Drawing.Color.DarkBlue;
+<<<<<<< HEAD
+=======
+            this.panelSidebar.Controls.Add(this.btnAnalytics);
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.panelSidebar.Controls.Add(this.btnPrint);
             this.panelSidebar.Controls.Add(this.btnLogout);
             this.panelSidebar.Controls.Add(this.btnEmployees);
@@ -51,10 +62,30 @@
             this.panelSidebar.Size = new System.Drawing.Size(248, 888);
             this.panelSidebar.TabIndex = 0;
             // 
+<<<<<<< HEAD
             // btnPrint
             // 
             this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+=======
+            // btnAnalytics
+            // 
+            this.btnAnalytics.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAnalytics.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.btnAnalytics.ForeColor = System.Drawing.Color.Black;
+            this.btnAnalytics.Location = new System.Drawing.Point(20, 312);
+            this.btnAnalytics.Name = "btnAnalytics";
+            this.btnAnalytics.Size = new System.Drawing.Size(210, 36);
+            this.btnAnalytics.TabIndex = 8;
+            this.btnAnalytics.Text = "Analytics";
+            this.btnAnalytics.UseVisualStyleBackColor = true;
+            this.btnAnalytics.Click += new System.EventHandler(this.btnAnalytics_Click);
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.btnPrint.Location = new System.Drawing.Point(20, 270);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(210, 36);
@@ -67,9 +98,15 @@
             // 
             this.btnLogout.BackColor = System.Drawing.Color.Red;
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+<<<<<<< HEAD
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Location = new System.Drawing.Point(20, 354);
+=======
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Location = new System.Drawing.Point(20, 396);
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(210, 36);
             this.btnLogout.TabIndex = 6;
@@ -80,8 +117,13 @@
             // btnEmployees
             // 
             this.btnEmployees.Cursor = System.Windows.Forms.Cursors.Hand;
+<<<<<<< HEAD
             this.btnEmployees.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmployees.Location = new System.Drawing.Point(20, 312);
+=======
+            this.btnEmployees.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.btnEmployees.Location = new System.Drawing.Point(20, 354);
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.btnEmployees.Name = "btnEmployees";
             this.btnEmployees.Size = new System.Drawing.Size(210, 36);
             this.btnEmployees.TabIndex = 5;
@@ -92,7 +134,11 @@
             // btnReports
             // 
             this.btnReports.Cursor = System.Windows.Forms.Cursors.Hand;
+<<<<<<< HEAD
             this.btnReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+=======
+            this.btnReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.btnReports.Location = new System.Drawing.Point(20, 228);
             this.btnReports.Name = "btnReports";
             this.btnReports.Size = new System.Drawing.Size(210, 36);
@@ -104,7 +150,11 @@
             // btnInventory
             // 
             this.btnInventory.Cursor = System.Windows.Forms.Cursors.Hand;
+<<<<<<< HEAD
             this.btnInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+=======
+            this.btnInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.btnInventory.Location = new System.Drawing.Point(20, 184);
             this.btnInventory.Name = "btnInventory";
             this.btnInventory.Size = new System.Drawing.Size(210, 36);
@@ -116,7 +166,11 @@
             // btnSales
             // 
             this.btnSales.Cursor = System.Windows.Forms.Cursors.Hand;
+<<<<<<< HEAD
             this.btnSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+=======
+            this.btnSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.btnSales.Location = new System.Drawing.Point(20, 140);
             this.btnSales.Name = "btnSales";
             this.btnSales.Size = new System.Drawing.Size(210, 36);
@@ -128,7 +182,11 @@
             // btnDashboard
             // 
             this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+<<<<<<< HEAD
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+=======
+            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.btnDashboard.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnDashboard.Location = new System.Drawing.Point(20, 96);
             this.btnDashboard.Name = "btnDashboard";
@@ -140,7 +198,11 @@
             // 
             // lblUserInfo
             // 
+<<<<<<< HEAD
             this.lblUserInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+=======
+            this.lblUserInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.lblUserInfo.ForeColor = System.Drawing.Color.White;
             this.lblUserInfo.Location = new System.Drawing.Point(12, 12);
             this.lblUserInfo.Name = "lblUserInfo";
@@ -159,16 +221,25 @@
             // 
             // MainForm
             // 
+<<<<<<< HEAD
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
+=======
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.ClientSize = new System.Drawing.Size(1689, 888);
             this.Controls.Add(this.panelContent);
             this.Controls.Add(this.panelSidebar);
             this.IsMdiContainer = true;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+<<<<<<< HEAD
             this.Text = "Store Management";
+=======
+            this.Text = "4Sisters Sales & Inventory Management System";
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelSidebar.ResumeLayout(false);
             this.ResumeLayout(false);

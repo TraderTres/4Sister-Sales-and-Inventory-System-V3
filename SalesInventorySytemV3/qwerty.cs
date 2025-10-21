@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SalesInventorySytemV3.Models
+namespace SalesInventorySytemV3
 {
-    public enum Role
+    internal class qwerty
     {
-        Administrator = 0,
-        Cashier = 1
     }
 }

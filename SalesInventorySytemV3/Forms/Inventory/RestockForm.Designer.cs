@@ -85,9 +85,12 @@
             // 
             // RestockForm
             // 
+<<<<<<< HEAD
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
+=======
+>>>>>>> b84597ba2fecdfbc5f6fc4f4bb9b8913e349d8f8
             this.BackColor = System.Drawing.Color.DarkBlue;
             this.ClientSize = new System.Drawing.Size(261, 146);
             this.Controls.Add(this.lblPrompt);

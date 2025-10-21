@@ -34,7 +34,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -125,12 +128,16 @@
     <Compile Include="Models\SaleItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="qwerty.cs" />
     <Compile Include="Repositories\InMemory\InMemoryEmployeeRepository.cs" />
     <Compile Include="Repositories\InMemory\InMemoryProductRepository.cs" />
     <Compile Include="Repositories\InMemory\InMemorySaleRepository.cs" />
     <Compile Include="Repositories\Interfaces\IEmployeeRepository.cs" />
     <Compile Include="Repositories\Interfaces\IProductRepository.cs" />
     <Compile Include="Repositories\Interfaces\ISaleRepository.cs" />
+    <Compile Include="Repositories\Sql\EmployeeSqlRepository.cs" />
+    <Compile Include="Repositories\Sql\ProductSqlRepository.cs" />
+    <Compile Include="Repositories\Sql\SaleSqlRepository.cs" />
     <Compile Include="Services\Implementations\AuthService.cs" />
     <Compile Include="Services\Implementations\EmployeeService.cs" />
     <Compile Include="Services\Implementations\ProductService.cs" />

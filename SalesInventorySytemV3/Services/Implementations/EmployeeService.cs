@@ -18,13 +18,21 @@ namespace SalesInventorySytemV3.Services.Implementations
             _employeeRepository = employeeRepository;
         }
 
-        public IEnumerable<Employee> GetAll() =>
-            _employeeRepository.GetAll();
+        public IEnumerable<Employee> GetAll() => _employeeRepository.GetAll();
 
-        public void CreateEmployee(Employee employee) =>
-            _employeeRepository.Add(employee);
+        public IEnumerable<Employee> GetAllActive()
+            => _employeeRepository.GetAll().Where(e => e.Status == "Active");
 
-        public int NextId() =>
-            _employeeRepository.NextId();
+        public Employee GetByUsername(string username)
+            => _employeeRepository.GetByUsername(username);
+
+        public Employee GetById(int id)
+            => _employeeRepository.GetById(id);
+
+        public void Add(Employee employee)
+            => _employeeRepository.Add(employee);
+
+        public int NextId()
+            => _employeeRepository.NextId();
     }
 }

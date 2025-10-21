@@ -18,22 +18,26 @@ namespace SalesInventorySytemV3.Services.Implementations
             _productRepository = productRepository;
         }
 
-        public IEnumerable<Product> GetAllActive() =>
-            _productRepository.GetAll().Where(p => p.Active);
+        public IEnumerable<Product> GetAll() => _productRepository.GetAll();
 
-        public Product GetById(int id) =>
-            _productRepository.GetById(id);
+        public IEnumerable<Product> GetAllActive()
+            => _productRepository.GetAll().Where(p => p.Active);
 
-        public Product GetByName(string name) =>
-            _productRepository.GetByName(name);
+        public Product GetById(int id) => _productRepository.GetById(id);
 
-        public void AddProduct(Product product) =>
-            _productRepository.Add(product);
+        public Product GetByName(string name) => _productRepository.GetByName(name);
 
-        public void UpdateProduct(Product product) =>
-            _productRepository.Update(product);
+        public void Add(Product product) => _productRepository.Add(product);
 
-        public int NextId() =>
-            _productRepository.NextId();
+        public void Update(Product product) => _productRepository.Update(product);
+
+        public int NextId() => _productRepository.NextId();
+        public IEnumerable<(string ProductName, int Stock)> GetInventoryLevels()
+        {
+            return _productRepository.GetAll()
+                .Select(p => (p.Name, p.Stock))
+                .ToList();
+        }
+
     }
 }
