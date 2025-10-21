@@ -40,9 +40,9 @@ namespace SalesInventorySytemV3.Forms.Login
             var emp = _authService.ValidateLogin(user, pass);
             if (emp != null)
             {
-                var main = new Main.MainForm(emp, _productService, _salesService, _employeeService);
+                var main = new Main.MainForm(emp, _productService, _salesService, _employeeService, this);
                 this.Hide();
-                main.FormClosed += (s, ev) => this.Close();
+
                 main.Show();
             }
             else
@@ -54,6 +54,13 @@ namespace SalesInventorySytemV3.Forms.Login
         private void LoginForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        public void ResetFields()
+        {
+            txtUsername.Text = string.Empty;
+            txtPassword.Text = string.Empty;
+            lblError.Text = string.Empty;
         }
     }
 }

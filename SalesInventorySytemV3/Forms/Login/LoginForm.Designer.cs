@@ -84,8 +84,9 @@
             // 
             // LoginForm
             // 
-            this.BackColor = System.Drawing.Color.DarkBlue;
             resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.DarkBlue;
             this.Controls.Add(this.lblDemo);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.btnSignIn);
