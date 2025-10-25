@@ -1,4 +1,7 @@
-﻿using System;
+﻿using SalesInventorySytemV3.Forms.Login;
+using SalesInventorySytemV3.Models;
+using SalesInventorySytemV3.Services.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,8 +10,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SalesInventorySytemV3.Models;
-using SalesInventorySytemV3.Services.Interfaces;
 
 namespace SalesInventorySytemV3.Forms.Main
 {
@@ -18,13 +19,15 @@ namespace SalesInventorySytemV3.Forms.Main
         private readonly IProductService _productService;
         private readonly ISalesService _salesService;
         private readonly IEmployeeService _employeeService;
+        private LoginForm _loginForm;
 
-        public MainForm(Employee user, IProductService productService, ISalesService salesService, IEmployeeService employeeService)
+        public MainForm(Employee user, IProductService productService, ISalesService salesService, IEmployeeService employeeService, LoginForm loginForm)
         {
             _currentUser = user;
             _productService = productService;
             _salesService = salesService;
             _employeeService = employeeService;
+            _loginForm = loginForm;
 
             InitializeComponent();
             lblUserInfo.Text = $"{_currentUser.Role}: {_currentUser.Username}";
@@ -62,8 +65,25 @@ namespace SalesInventorySytemV3.Forms.Main
         private void btnInventory_Click(object sender, EventArgs e) => OpenChildForm(new Inventory.InventoryForm(_productService));
         private void btnReports_Click(object sender, EventArgs e) => OpenChildForm(new Reports.ReportsForm(_productService, _salesService));
         private void btnEmployees_Click(object sender, EventArgs e) => OpenChildForm(new Employees.EmployeesForm(_employeeService));
-        private void btnLogout_Click(object sender, EventArgs e) { Application.Restart(); }
+        private void btnLogout_Click(object sender, EventArgs e) 
+        {
+            this.Close();
+            _loginForm.ResetFields();
+            _loginForm.Show();
+        }
         private void btnPrint_Click(object sender, EventArgs e) => OpenChildForm(new Print.PrintForm(_productService, _salesService));
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblUserInfo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAnalytics_Click(object sender, EventArgs e) => OpenChildForm(new Analytics.AnalyticsForm(_productService, _salesService));
 
 
     }

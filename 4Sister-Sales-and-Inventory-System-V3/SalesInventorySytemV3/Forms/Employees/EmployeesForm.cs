@@ -19,6 +19,7 @@ namespace SalesInventorySytemV3.Forms.Employees
             _employeeService = employeeService;
             InitializeComponent();
             LoadEmployees();
+            timer1.Start();
         }
 
         private void LoadEmployees()
@@ -31,6 +32,17 @@ namespace SalesInventorySytemV3.Forms.Employees
         {
             var f = new CreateEmployeeForm(_employeeService);
             if (f.ShowDialog() == DialogResult.OK) LoadEmployees();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DateTime datetime = DateTime.Now;
+            this.time.Text = datetime.ToString();
+        }
+
+        private void EmployeesForm_Load(object sender, EventArgs e)
+        {
+            day.Text = System.DateTime.Now.DayOfWeek.ToString();
         }
     }
 }

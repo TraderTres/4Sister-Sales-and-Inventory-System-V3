@@ -24,6 +24,7 @@ namespace SalesInventorySytemV3.Forms.Sales
             _salesService = salesService;
             InitializeComponent();
             LoadProducts();
+            timer1.Start();
         }
 
         private void LoadProducts()
@@ -100,5 +101,16 @@ namespace SalesInventorySytemV3.Forms.Sales
 
         // helper
         private class ComboBoxItem { public string Text { get; set; } public object Value { get; set; } public override string ToString() => Text; }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DateTime datetime = DateTime.Now;
+            this.time.Text = datetime.ToString();
+        }
+
+        private void SalesForm_Load(object sender, EventArgs e)
+        {
+            day.Text = System.DateTime.Now.DayOfWeek.ToString();
+        }
     }
 }

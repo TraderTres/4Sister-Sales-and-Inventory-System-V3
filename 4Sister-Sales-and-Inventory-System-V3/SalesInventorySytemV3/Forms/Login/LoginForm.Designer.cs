@@ -10,7 +10,6 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnSignIn;
         private System.Windows.Forms.Label lblError;
-        private System.Windows.Forms.Label lblDemo;
 
         protected override void Dispose(bool disposing)
         {
@@ -28,7 +27,8 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnSignIn = new System.Windows.Forms.Button();
             this.lblError = new System.Windows.Forms.Label();
-            this.lblDemo = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -62,7 +62,7 @@
             // 
             // btnSignIn
             // 
-            this.btnSignIn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnSignIn.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSignIn.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.btnSignIn, "btnSignIn");
@@ -76,31 +76,35 @@
             this.lblError.ForeColor = System.Drawing.Color.Red;
             this.lblError.Name = "lblError";
             // 
-            // lblDemo
+            // groupBox1
             // 
-            resources.ApplyResources(this.lblDemo, "lblDemo");
-            this.lblDemo.ForeColor = System.Drawing.Color.White;
-            this.lblDemo.Name = "lblDemo";
+            this.groupBox1.BackColor = System.Drawing.Color.DarkBlue;
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Controls.Add(this.lblError);
+            this.groupBox1.Controls.Add(this.btnSignIn);
+            this.groupBox1.Controls.Add(this.txtPassword);
+            this.groupBox1.Controls.Add(this.lblPassword);
+            this.groupBox1.Controls.Add(this.txtUsername);
+            this.groupBox1.Controls.Add(this.lblUsername);
+            this.groupBox1.Controls.Add(this.lblTitle);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
             // 
             // LoginForm
             // 
-            this.BackColor = System.Drawing.Color.DarkBlue;
             resources.ApplyResources(this, "$this");
-            this.Controls.Add(this.lblDemo);
-            this.Controls.Add(this.lblError);
-            this.Controls.Add(this.btnSignIn);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.txtUsername);
-            this.Controls.Add(this.lblUsername);
-            this.Controls.Add(this.lblTitle);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.DarkBlue;
+            this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.Color.White;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "LoginForm";
             this.Load += new System.EventHandler(this.LoginForm_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
+
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

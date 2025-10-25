@@ -85,6 +85,10 @@
             // 
             // RestockForm
             // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScroll = true;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.DarkBlue;
             this.ClientSize = new System.Drawing.Size(261, 146);
             this.Controls.Add(this.lblPrompt);
@@ -94,6 +98,7 @@
             this.Name = "RestockForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Restock";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.nudQty)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

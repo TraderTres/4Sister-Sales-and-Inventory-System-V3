@@ -22,6 +22,7 @@ namespace SalesInventorySytemV3.Forms.Reports
             _productService = productService;
             _salesService = salesService;
             InitializeComponent();
+            timer1.Start();
         }
 
         private void btnGenerate_Click(object sender, EventArgs e)
@@ -84,6 +85,17 @@ namespace SalesInventorySytemV3.Forms.Reports
                     MessageBox.Show("Please select a report type.");
                     break;
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DateTime datetime = DateTime.Now;
+            this.time.Text = datetime.ToString();
+        }
+
+        private void ReportsForm_Load(object sender, EventArgs e)
+        {
+            day.Text = System.DateTime.Now.DayOfWeek.ToString();
         }
     }
 }

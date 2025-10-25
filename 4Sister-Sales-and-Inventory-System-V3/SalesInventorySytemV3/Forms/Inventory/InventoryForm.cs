@@ -20,6 +20,7 @@ namespace SalesInventorySytemV3.Forms.Inventory
             _productService = productService;
             InitializeComponent();
             LoadProducts();
+            timer1.Start();
         }
 
         public void LoadProducts()
@@ -63,7 +64,13 @@ namespace SalesInventorySytemV3.Forms.Inventory
 
         private void InventoryForm_Load(object sender, EventArgs e)
         {
+            day.Text = System.DateTime.Now.DayOfWeek.ToString();
+        }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DateTime datetime = DateTime.Now;
+            this.time.Text = datetime.ToString();
         }
     }
 }

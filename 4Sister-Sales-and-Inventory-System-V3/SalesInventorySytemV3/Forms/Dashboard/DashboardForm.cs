@@ -22,6 +22,7 @@ namespace SalesInventorySytemV3.Forms.Dashboard
             _salesService = salesService;
             InitializeComponent();
             LoadDashboard();
+            timer1.Start();
         }
 
         public void LoadDashboard()
@@ -48,6 +49,27 @@ namespace SalesInventorySytemV3.Forms.Dashboard
                     lvRecent.Items.Add(new ListViewItem(new[] { s.Date.ToString("g"), itemsText, $"₱{s.Total:F2}" }));
                 }
             }
+        }
+
+        private void lvRecent_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTodaySalesLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DateTime datetime = DateTime.Now;
+            this.time.Text = datetime.ToString();
+        }
+
+        private void DashboardForm_Load(object sender, EventArgs e)
+        {
+            day.Text = System.DateTime.Now.DayOfWeek.ToString();
         }
     }
 }
