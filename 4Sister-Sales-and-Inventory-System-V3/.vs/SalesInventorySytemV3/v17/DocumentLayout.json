@@ -1,0 +1,357 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|c:\\users\\tres\\source\\repos\\4sister-sales-and-inventory-system-v3\\4sister-sales-and-inventory-system-v3\\salesinventorysytemv3\\forms\\dashboard\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\dashboard\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\salesinventorysytemv3\\forms\\inventory\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\inventory\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\salesinventorysytemv3\\forms\\analytics\\analyticsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\analytics\\analyticsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\salesinventorysytemv3\\forms\\login\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\login\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\salesinventorysytemv3\\forms\\main\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\main\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\salesinventorysytemv3\\forms\\sales\\salesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\sales\\salesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\salesinventorysytemv3\\forms\\reports\\reportsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\reports\\reportsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\salesinventorysytemv3\\forms\\main\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\main\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\salesinventorysytemv3\\forms\\analytics\\analyticsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\analytics\\analyticsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\salesinventorysytemv3\\forms\\print\\printform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\print\\printform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\salesinventorysytemv3\\forms\\print\\printform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\print\\printform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\salesinventorysytemv3\\forms\\employees\\employeesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\employees\\employeesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\salesinventorysytemv3\\forms\\reports\\reportsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\reports\\reportsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\salesinventorysytemv3\\forms\\login\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\login\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\salesinventorysytemv3\\forms\\employees\\employeesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\employees\\employeesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\salesinventorysytemv3\\forms\\inventory\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\inventory\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\salesinventorysytemv3\\forms\\sales\\salesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\sales\\salesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\salesinventorysytemv3\\forms\\dashboard\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\dashboard\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\salesinventorysytemv3\\forms\\inventory\\addproductform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\inventory\\addproductform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\salesinventorysytemv3\\forms\\inventory\\restockform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\inventory\\restockform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\salesinventorysytemv3\\forms\\employees\\createemployeeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A38D924B-D6CE-4EC8-BE16-FEAA0C6273A7}|SalesInventorySytemV3\\SalesInventorySytemV3.csproj|solutionrelative:salesinventorysytemv3\\forms\\employees\\createemployeeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Login\\LoginForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Login\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Login\\LoginForm.cs [Design]",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Login\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T16:07:31.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Main\\MainForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Main\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Main\\MainForm.cs",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Main\\MainForm.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAnwFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T10:01:20.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AnalyticsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Analytics\\AnalyticsForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Analytics\\AnalyticsForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Analytics\\AnalyticsForm.cs [Design]",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Analytics\\AnalyticsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T13:25:55.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Dashboard\\DashboardForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Dashboard\\DashboardForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Dashboard\\DashboardForm.cs [Design]",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Dashboard\\DashboardForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T16:07:23.322Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InventoryForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Inventory\\InventoryForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Inventory\\InventoryForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Inventory\\InventoryForm.cs [Design]",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Inventory\\InventoryForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T16:07:28.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SalesForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Sales\\SalesForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Sales\\SalesForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Sales\\SalesForm.cs [Design]",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Sales\\SalesForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T16:07:39.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReportsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Reports\\ReportsForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Reports\\ReportsForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Reports\\ReportsForm.cs [Design]",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Reports\\ReportsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T16:07:37.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EmployeesForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Employees\\EmployeesForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Employees\\EmployeesForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Employees\\EmployeesForm.cs [Design]",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Employees\\EmployeesForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T16:07:25.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Login\\LoginForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Login\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Login\\LoginForm.cs",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Login\\LoginForm.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAADwvywAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T11:26:31.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ReportsForm.cs",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Reports\\ReportsForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Reports\\ReportsForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Reports\\ReportsForm.cs",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Reports\\ReportsForm.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAowGEAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T12:57:30.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Main\\MainForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Main\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Main\\MainForm.cs [Design]",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Main\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T16:07:33.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AnalyticsForm.cs",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Analytics\\AnalyticsForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Analytics\\AnalyticsForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Analytics\\AnalyticsForm.cs",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Analytics\\AnalyticsForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T13:27:47.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PrintForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Print\\PrintForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Print\\PrintForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\Source\\Repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Print\\PrintForm.cs [Design]",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Print\\PrintForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T16:07:35.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PrintForm.cs",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Print\\PrintForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Print\\PrintForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Print\\PrintForm.cs",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Print\\PrintForm.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T12:58:18.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EmployeesForm.cs",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Employees\\EmployeesForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Employees\\EmployeesForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Employees\\EmployeesForm.cs",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Employees\\EmployeesForm.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAWwCwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T13:10:28.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "InventoryForm.cs",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Inventory\\InventoryForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Inventory\\InventoryForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Inventory\\InventoryForm.cs",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Inventory\\InventoryForm.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAWwEcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T12:56:59.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SalesForm.cs",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Sales\\SalesForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Sales\\SalesForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Sales\\SalesForm.cs",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Sales\\SalesForm.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAD4v3AAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T12:56:22.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DashboardForm.cs",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Dashboard\\DashboardForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Dashboard\\DashboardForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Dashboard\\DashboardForm.cs",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Dashboard\\DashboardForm.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T10:21:17.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AddProductForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Inventory\\AddProductForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Inventory\\AddProductForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Inventory\\AddProductForm.cs [Design]",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Inventory\\AddProductForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T16:17:38.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CreateEmployeeForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Employees\\CreateEmployeeForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Employees\\CreateEmployeeForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Employees\\CreateEmployeeForm.cs [Design]",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Employees\\CreateEmployeeForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T16:17:19.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RestockForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Inventory\\RestockForm.cs",
+              "RelativeDocumentMoniker": "SalesInventorySytemV3\\Forms\\Inventory\\RestockForm.cs",
+              "ToolTip": "C:\\Users\\Tres\\source\\repos\\4Sister-Sales-and-Inventory-System-V3\\4Sister-Sales-and-Inventory-System-V3\\SalesInventorySytemV3\\Forms\\Inventory\\RestockForm.cs [Design]",
+              "RelativeToolTip": "SalesInventorySytemV3\\Forms\\Inventory\\RestockForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T16:17:46.767Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
